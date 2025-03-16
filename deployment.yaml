@@ -3,11 +3,11 @@ kind: Deployment
 metadata:
   name: k8s-web
 spec:
+  replicas: 3
   selector:
     matchLabels:
       app: k8s-web
   template:
-    replicas: 3
     metadata:
       labels:
         app: k8s-web
